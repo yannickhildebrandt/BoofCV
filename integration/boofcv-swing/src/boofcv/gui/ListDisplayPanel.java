@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2017, Peter Abeles. All Rights Reserved.
+ * Copyright (c) 2011-2016, Peter Abeles. All Rights Reserved.
  *
  * This file is part of BoofCV (http://boofcv.org).
  *
@@ -27,6 +27,8 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +43,10 @@ public class ListDisplayPanel extends JPanel implements ListSelectionListener  {
 	final List<JPanel> panels = new ArrayList<>();
 	private JPanel bodyPanel;
 	private JList listPanel;
+	int selectedIndex = 0;
+	JButton jButton = new JButton("Oberteil auswählen");
+	JButton jButtonHose = new JButton("Hose auswählen");
+	JButton jButtonSchuhe = new JButton("Schuhe auswählen!");
 
 	DefaultListModel listModel = new DefaultListModel();
 
@@ -60,13 +66,42 @@ public class ListDisplayPanel extends JPanel implements ListSelectionListener  {
 		scroll = new JScrollPane(listPanel);
 		scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-
+		jButtonSchuhe.setBounds(800,300,200,100);
+		jButton.setBounds(800,100,200,100);
+		jButtonHose.setBounds(800,200,200,100);
+		jButtonSchuhe.setVisible(false);
+		jButtonHose.setVisible(false);
+		jButton.setVisible(true);
 		bodyPanel = new JPanel();
+		bodyPanel.add(jButtonSchuhe);
+		bodyPanel.add(jButtonHose);
+		bodyPanel.add(jButton);
 		bodyPanel.setLayout(new BorderLayout());
 		bodyPanel.add(scroll,BorderLayout.WEST);
-
 		add(bodyPanel);
 	}
+	public JButton getJButtonSchuhe(){
+		return this.jButtonSchuhe;
+	}
+	public JButton getJButtonHose(){
+		return this.jButtonHose;
+	}
+
+	public JButton getJButton(){
+		return this.jButton;
+	}
+	/*
+	public int addButtonClick() {
+		jButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				selectedIndex = listPanel.getSelectedIndex();
+				System.out.println(selectedIndex);
+
+			}
+		});
+	 return selectedIndex;}*/
+
 
 	public synchronized void reset() {
 		panels.clear();
@@ -116,8 +151,6 @@ public class ListDisplayPanel extends JPanel implements ListSelectionListener  {
 
 		Dimension panelD = panel.getPreferredSize();
 
-		final boolean sizeChanged = bodyWidth != panelD.width || bodyHeight != panelD.height;
-
 		// make the preferred size large enough to hold all the images
 		bodyWidth = (int)Math.max(bodyWidth, panelD.getWidth());
 		bodyHeight = (int)Math.max(bodyHeight,panelD.getHeight());
@@ -134,15 +167,17 @@ public class ListDisplayPanel extends JPanel implements ListSelectionListener  {
 				listPanel.setPreferredSize(new Dimension(d.width + scroll.getVerticalScrollBar().getWidth(), d.height));
 
 				// make sure it's preferred size is up to date
-				if( sizeChanged ) {
-					Component old = ((BorderLayout) bodyPanel.getLayout()).getLayoutComponent(BorderLayout.CENTER);
-					if (old != null) {
-						old.setPreferredSize(new Dimension(bodyWidth, bodyHeight));
-					}
-				}
+				Component old = ((BorderLayout) bodyPanel.getLayout()).getLayoutComponent(BorderLayout.CENTER);
+				if (old != null)
+					old.setPreferredSize(new Dimension(bodyWidth, bodyHeight));
+
 				validate();
 			}
 		});
+	}
+	public int getImage(){
+		listPanel.getSelectedIndex();
+		return listPanel.getSelectedIndex();
 	}
 
 	@Override

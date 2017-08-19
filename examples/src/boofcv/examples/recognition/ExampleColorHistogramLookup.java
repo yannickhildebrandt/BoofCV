@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2017, Peter Abeles. All Rights Reserved.
+ * Copyright (c) 2011-2016, Peter Abeles. All Rights Reserved.
  *
  * This file is part of BoofCV (http://boofcv.org).
  *
@@ -24,11 +24,13 @@ import boofcv.alg.feature.color.GHistogramFeatureOps;
 import boofcv.alg.feature.color.HistogramFeatureOps;
 import boofcv.alg.feature.color.Histogram_F64;
 import boofcv.gui.ListDisplayPanel;
+import boofcv.gui.image.ImagePanel;
 import boofcv.gui.image.ScaleOptions;
 import boofcv.gui.image.ShowImages;
 import boofcv.io.UtilIO;
 import boofcv.io.image.ConvertBufferedImage;
 import boofcv.io.image.UtilImageIO;
+import boofcv.misc.BoofMiscOps;
 import boofcv.struct.feature.TupleDesc_F64;
 import boofcv.struct.image.GrayF32;
 import boofcv.struct.image.GrayU8;
@@ -38,9 +40,15 @@ import org.ddogleg.nn.NearestNeighbor;
 import org.ddogleg.nn.NnData;
 import org.ddogleg.struct.FastQueue;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.lang.reflect.Array;
 import java.util.*;
+
+import static boofcv.examples.imageprocessing.ExamplePlanarImages.gui;
 
 /**
  * Demonstration of how to find similar images using color histograms.  Image color histograms here are treated as
@@ -58,6 +66,22 @@ import java.util.*;
  * @author Peter Abeles
  */
 public class ExampleColorHistogramLookup {
+	/*Static Variablen um in der Inneren Klasse des
+	* Onclick Listeners auf die Variablen zuzugreifen bzw diese zu setzen.
+	*
+	* */
+	static int targetOberteil= 0;
+	static List<File> imagesOberteile;
+	static List<File> imagesHosen;
+	static List<File> TestSchuhe;
+	static List<double[]> pointsOberteile;
+	static List<double[]> pointsHosen;
+	static List<double[]> pointsTestSchuhe;
+	static double[] targetPoint;
+	static File resultHose;
+	static File resultSchuhe;
+	static ArrayList<File> resultListHose= new ArrayList<File>();
+	static ArrayList<File> resultListSchuhe= new ArrayList<File>();
 
 	/**
 	 * HSV stores color information in Hue and Saturation while intensity is in Value.  This computes a 2D histogram
@@ -65,7 +89,6 @@ public class ExampleColorHistogramLookup {
 	 */
 	public static List<double[]> coupledHueSat( List<File> images  ) {
 		List<double[]> points = new ArrayList<>();
-
 		Planar<GrayF32> rgb = new Planar<>(GrayF32.class,1,1,3);
 		Planar<GrayF32> hsv = new Planar<>(GrayF32.class,1,1,3);
 
@@ -194,64 +217,139 @@ public class ExampleColorHistogramLookup {
 
 		return points;
 	}
+	/*
+	* Filelisten initialisieren und in punktlisten umwandeln dort können verschiedene arten der farbhistogramme
+	* gewählt werden. Danach werden dem UI alle Oberteile hinzugefügt und die verschiedenen Buttons initialisiert
+	*
+	*
+	*
+	* */
 
 	public static void main(String[] args) {
 
-		String imagePath = UtilIO.pathExample("recognition/vacation");
-		List<File> images = Arrays.asList(UtilIO.findMatches(new File(imagePath),"\\w*.jpg"));
-		Collections.sort(images);
-
+		String regexOberteile = UtilIO.pathExample("recognition/Oberteile")+"/^\\w*.jpg";
+		String regexHosen = UtilIO.pathExample("recognition/Hosen")+"/^\\w*.jpg";
+		String regexTestSchuhe = UtilIO.pathExample("recognition/Schuhe")+"/^\\w*.jpg";
+		//List <File> images für Oberteile
+		//List <File> images für hosen/Unterteile
+		//List <File> image für Schuhe
+		imagesHosen = Arrays.asList(BoofMiscOps.findMatches(regexHosen));
+		Collections.sort(imagesHosen);
+		imagesOberteile = Arrays.asList(BoofMiscOps.findMatches(regexOberteile));
+		Collections.sort(imagesOberteile);
+		TestSchuhe = Arrays.asList(BoofMiscOps.findMatches(regexTestSchuhe));
+		Collections.sort(TestSchuhe);
 		// Different color spaces you can try
-		List<double[]> points = coupledHueSat(images);
+		// Color listen für hose und schuhe anlegen lassen
+		pointsOberteile = coupledRGB(imagesOberteile);
+		pointsHosen = coupledRGB(imagesHosen);
+		pointsTestSchuhe = coupledRGB(TestSchuhe);
 //		List<double[]> points = independentHueSat(images);
 //		List<double[]> points = coupledRGB(images);
 //		List<double[]> points = histogramGray(images);
+		final ListDisplayPanel gui = new ListDisplayPanel();
+		// Fügt dem UI alle Oberteile hinzu
+		for (int i = 0; i < imagesOberteile.size(); i++) {
+			File file = imagesOberteile.get(i);
+			BufferedImage image = UtilImageIO.loadImage(file.getPath());
+			gui.addImage(image, String.format("Oberteil"), ScaleOptions.ALL);}
+		//Zeigt UI an
+		ShowImages.showWindow(gui,"Similar Images",true);
+		// Holt Button aus der Klasse
+		setButtonOberteile(gui);
+		setButtonHosen(gui);
+		setButtonSchuhe(gui);
+	}
+	/*
+	*
+	* Initialisierung der verschiedenen Buttons, die beim klicken Ähnlichkeit aufgrund des ausgewählten kleidungsstück berechnen
+	* und die 3 nächsten nachbarn im UI zurückgeben
+	* Der letzte Button gibt das gesamte Outfit aus
+	*
+	* */
 
-		// A few suggested image you can try searching for
-		int target = 0;
-//		int target = 28;
-//		int target = 38;
-//		int target = 46;
-//		int target = 65;
-//		int target = 77;
-
-		double[] targetPoint = points.get(target);
-
-		// Use a generic NN search algorithm.  This uses Euclidean distance as a distance metric.
-		NearestNeighbor<File> nn = FactoryNearestNeighbor.exhaustive();
-		FastQueue<NnData<File>> results = new FastQueue(NnData.class,true);
-
-		nn.init(targetPoint.length);
-		nn.setPoints(points, images);
-		nn.findNearest(targetPoint, -1, 10, results);
-
-		ListDisplayPanel gui = new ListDisplayPanel();
-
-		// Add the target which the other images are being matched against
-		gui.addImage(UtilImageIO.loadImage(images.get(target).getPath()), "Target", ScaleOptions.ALL);
-
-		// The results will be the 10 best matches, but their order can be arbitrary.  For display purposes
-		// it's better to do it from best fit to worst fit
-		Collections.sort(results.toList(), new Comparator<NnData>() {
+	private static void setButtonOberteile(final ListDisplayPanel gui) {
+		final JButton buttonHose = gui.getJButtonHose();
+		buttonHose.setVisible(false);
+		final JButton button = gui.getJButton();
+		button.addActionListener(new ActionListener() {
 			@Override
-			public int compare(NnData o1, NnData o2) {
-				if( o1.distance < o2.distance)
-					return -1;
-				else if( o1.distance > o2.distance )
-					return 1;
-				else
-					return 0;
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Oberteil Nummer "+gui.getImage()+" wurde ausgewählt!");
+				targetOberteil = gui.getImage() ;
+				gui.reset();
+				NearestNeighbor<File> nn = FactoryNearestNeighbor.exhaustive();
+				FastQueue<NnData<File>> results = new FastQueue(NnData.class,true);
+				targetPoint = pointsOberteile.get(targetOberteil);
+				nn.init(targetPoint.length);
+				nn.setPoints(pointsHosen, imagesHosen);
+				nn.findNearest(targetPoint, -1, 3, results);
+				for (int i = 0; i < results.size; i++) {
+					File file = results.get(i).data;
+					double error = results.get(i).distance;
+					BufferedImage image = UtilImageIO.loadImage(file.getPath());
+					gui.addImage(image, String.format("Error %6.3f", error), ScaleOptions.ALL);
+					resultListHose.add(file);
+					System.out.println("Die ResultListHose ist "+resultListHose.size()+" Elemente groß");
+
+				}
+				button.setVisible(false);
+				buttonHose.setVisible(true);
+
 			}
 		});
 
-		// Add images to GUI -- first match is always the target image, so skip it
-		for (int i = 1; i < results.size; i++) {
-			File file = results.get(i).data;
-			double error = results.get(i).distance;
-			BufferedImage image = UtilImageIO.loadImage(file.getPath());
-			gui.addImage(image, String.format("Error %6.3f", error), ScaleOptions.ALL);
-		}
-
-		ShowImages.showWindow(gui,"Similar Images",true);
 	}
+	private static void setButtonHosen(final ListDisplayPanel gui) {
+		final JButton buttonSchuhe = gui.getJButtonSchuhe();
+		final JButton button = gui.getJButtonHose();
+		button.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				resultHose = resultListHose.get(gui.getImage());
+				System.out.println("Hose Nummer "+gui.getImage()+" wurde ausgewählt!");
+				gui.reset();
+				NearestNeighbor<File> nn = FactoryNearestNeighbor.exhaustive();
+				FastQueue<NnData<File>> results = new FastQueue(NnData.class,true);
+				targetPoint = pointsOberteile.get(targetOberteil);
+				nn.init(targetPoint.length);
+				nn.setPoints(pointsTestSchuhe, TestSchuhe);
+				nn.findNearest(targetPoint, -1, 3, results);
+				for (int i = 0; i < results.size; i++) {
+					File file = results.get(i).data;
+					double error = results.get(i).distance;
+					BufferedImage image = UtilImageIO.loadImage(file.getPath());
+					gui.addImage(image, String.format("Error %6.3f", error), ScaleOptions.ALL);
+					resultListSchuhe.add(file);
+					System.out.println("ResultList Schuhe ist "+resultListSchuhe.size()+" Elemente groß");
+				}
+				button.setVisible(false);
+				buttonSchuhe.setVisible(true);
+			}
+		});
+
+	}
+	private static void setButtonSchuhe(final ListDisplayPanel gui){
+		final JButton button = gui.getJButtonSchuhe();
+		button.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				resultSchuhe = resultListSchuhe.get(gui.getImage());
+				System.out.println("Schuh Nummer "+gui.getImage()+" wurde ausgewählt");
+				gui.reset();
+				File fileOberteil = imagesOberteile.get(targetOberteil);
+				BufferedImage imageOberteil = UtilImageIO.loadImage(fileOberteil.getPath());
+				BufferedImage imageHose = UtilImageIO.loadImage(resultHose.getPath());
+				BufferedImage imageSchuhe = UtilImageIO.loadImage(resultSchuhe.getPath());
+				gui.addImage(imageOberteil, String.format("Oberteil"), ScaleOptions.ALL);
+				gui.addImage(imageHose, String.format("Hose"), ScaleOptions.ALL);
+				gui.addImage(imageSchuhe, String.format("Schuhe"), ScaleOptions.ALL);
+				button.setVisible(false);
+			}
+		});
+
+	}
+
+
+
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BoofCV.iml" filepath="$PROJECT_DIR$/.idea/modules/BoofCV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/applications/BoofCV Applications.iml" filepath="$PROJECT_DIR$/.idea/modules/applications/BoofCV Applications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demonstrations/BoofCV Demonstrations.iml" filepath="$PROJECT_DIR$/.idea/modules/demonstrations/BoofCV Demonstrations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/examples/BoofCV Examples.iml" filepath="$PROJECT_DIR$/.idea/modules/examples/BoofCV Examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/autocode/autocode.iml" filepath="$PROJECT_DIR$/.idea/modules/main/autocode/autocode.iml" group="main/autocode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/autocode/autocode_main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/autocode/autocode_main.iml" group="main/autocode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/autocode/autocode_test.iml" filepath="$PROJECT_DIR$/.idea/modules/main/autocode/autocode_test.iml" group="main/autocode" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/integration/boofcv-WebcamCapture/boofcv-WebcamCapture.iml" filepath="$PROJECT_DIR$/.idea/modules/integration/boofcv-WebcamCapture/boofcv-WebcamCapture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/integration/boofcv-all/boofcv-all.iml" filepath="$PROJECT_DIR$/.idea/modules/integration/boofcv-all/boofcv-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-calibration/boofcv-calibration.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-calibration/boofcv-calibration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-core/boofcv-core.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-core/boofcv-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-feature/boofcv-feature.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-feature/boofcv-feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/integration/boofcv-ffmpeg/boofcv-ffmpeg.iml" filepath="$PROJECT_DIR$/.idea/modules/integration/boofcv-ffmpeg/boofcv-ffmpeg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-geo/boofcv-geo.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-geo/boofcv-geo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-io/boofcv-io.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-io/boofcv-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-ip/boofcv-ip.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-ip/boofcv-ip.iml" group="main/boofcv-ip" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-ip/boofcv-ip_main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-ip/boofcv-ip_main.iml" group="main/boofcv-ip" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-ip/boofcv-ip_test.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-ip/boofcv-ip_test.iml" group="main/boofcv-ip" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/integration/boofcv-javacv/boofcv-javacv.iml" filepath="$PROJECT_DIR$/.idea/modules/integration/boofcv-javacv/boofcv-javacv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/integration/boofcv-javafx/boofcv-javafx.iml" filepath="$PROJECT_DIR$/.idea/modules/integration/boofcv-javafx/boofcv-javafx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/integration/boofcv-jcodec/boofcv-jcodec.iml" filepath="$PROJECT_DIR$/.idea/modules/integration/boofcv-jcodec/boofcv-jcodec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-learning/boofcv-learning.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-learning/boofcv-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-recognition/boofcv-recognition.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-recognition/boofcv-recognition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/boofcv-sfm/boofcv-sfm.iml" filepath="$PROJECT_DIR$/.idea/modules/main/boofcv-sfm/boofcv-sfm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/integration/boofcv-swing/boofcv-swing.iml" filepath="$PROJECT_DIR$/.idea/modules/integration/boofcv-swing/boofcv-swing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/checks/checks.iml" filepath="$PROJECT_DIR$/.idea/modules/main/checks/checks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/integration/integration.iml" filepath="$PROJECT_DIR$/.idea/modules/integration/integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/main.iml" />
+    </modules>
+  </component>
+</project>
