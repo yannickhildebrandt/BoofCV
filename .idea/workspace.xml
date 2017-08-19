@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66bdadb7-b6c5-475e-bdfc-43c419c854ae" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/amoeba_shapes.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/apartment_building_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/apartment_building_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/associate.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/background/highway_bridge_jitter.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/background/horse_jitter.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/background/parking_lot_scan.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/background/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/background/river_overview_long_sweep.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/background/street_intersection.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/binary.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calib_mono_planar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calib_stereo_planar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/A1_chess.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/A1_square.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/A4_chess.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/A4_square.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/letter_acircle.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/letter_chess.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/letter_square.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/PULNiX_CCD_6mm_Zhang/CalibIm1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/PULNiX_CCD_6mm_Zhang/CalibIm2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/PULNiX_CCD_6mm_Zhang/CalibIm3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/PULNiX_CCD_6mm_Zhang/CalibIm4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/PULNiX_CCD_6mm_Zhang/CalibIm5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/PULNiX_CCD_6mm_Zhang/info.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/PULNiX_CCD_6mm_Zhang/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/frame13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/images.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/info.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Chess/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/image09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleAsym/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleRegular/image00000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleRegular/image00001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleRegular/image00002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleRegular/image00003.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleRegular/image00004.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleRegular/image00005.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_CircleRegular/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/frame14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/images.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/info.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/mono/Sony_DSC-HX5V_Square/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/info.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/intrinsicLeft.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/left11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/right11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Chess/stereo.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/info.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/left13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/right13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/calibration/stereo/Bumblebee2_Square/stereo.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/cave_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/cave_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/contours.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denoise.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/Grove2_07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/Grove2_08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/Grove2_09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/Urban2_07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/Urban2_08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/denseflow.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/dogdance07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/dogdance08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/denseflow/source.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/disparity.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/drawings/drawing_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/drawings/drawing_text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/driving_snow.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/enhance/dark.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/enhance/dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/enhance/dull.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/enhance/enhance.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/eye01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/features.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/eps/letter_all.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/eps/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/eps/square0284.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/eps/square0643.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/image0000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/image0001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/image0002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/movie.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary_grid/description_4x3_3x3_4cm_2cm.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary_grid/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary_grid/letter_grid_4x3_3x3_4cm_2cm.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary_grid/movie.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/binary_grid/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/chessboard/image00.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/chessboard/image01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/chessboard/image02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/chessboard/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/chessboard/movie.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/circle_asymmetric/image00.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/circle_asymmetric/image01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/circle_asymmetric/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/circle_asymmetric/movie.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/fiducial.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_chicken.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_dog.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_h2o.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_hand01.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_ke.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_leaf01.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_leaf02.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_pentarose.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_text_boofcv.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_yinyang.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_yu.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/10cm_yu_inverted.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/all_a4.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/eps/all_letter.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/examples/image00.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/examples/image01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/examples/image02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/examples/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/examples/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/notes.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/chicken.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/dog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/h2o.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/hand01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/ke.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/leaf01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/leaf02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/pentarose.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/text_boofcv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/yinyang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/yu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/patterns/yu_inverted.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/video/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/image/video/movie.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/square_grid/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fiducial/square_grid/movie.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fisheye/theta/back.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fisheye/theta/back_hike.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fisheye/theta/back_table.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fisheye/theta/front.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fisheye/theta/front_hike.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/fisheye/theta/front_table.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/goals_and_stuff.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/gradient.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/indoors01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kayak_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kayak_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kayak_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/basket/basket_depth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/basket/basket_rgb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/basket/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/basket/visualdepth.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/circle/config.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/circle/depth.mpng" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/circle/rgb.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/circle/visualdepth.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/data_vo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/straight/config.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/straight/depth.mpng" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/straight/rgb.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/kinect/straight/visualdepth.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/learning/scene/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/lines.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/lines_indoors.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/lines_indoors.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/mosaic/airplane01.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/mosaic/airplane02.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/mosaic_video.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/mountain_rotate_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/mountain_rotate_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/outdoors01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/particles01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/rainforest_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/rainforest_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/rectify_calibrated.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/remove_lens_distortion.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/road/ground_to_left_01.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/road/left01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/road/right01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/road/stereo01.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/rotate.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/beach01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/beach02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/beach03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/mountain_19p9mm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/mountain_4p2mm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/mountain_7p1mm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/rainforest_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/rainforest_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scale/rainforest_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/scalespace.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/segment/berkeley_horses.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/segment/berkeley_kangaroo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/segment/berkeley_man.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/segment/mountain_pines_people.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/segment/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/segment/segment.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/segment/stained_handwriting.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/segment/uneven_lighting_squares.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image003.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image004.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image005.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image006.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image007.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image008.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image009.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image010.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image011.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image012.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image013.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image014.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image015.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image016.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image017.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image018.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image019.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/image020.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sfm/chair/intrinsic_DSC-HX5_3648x2736_to_640x480.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/shake.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/shapefit.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/shapes/concave01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/shapes/line_text_test_image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/shapes/polygons01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/shapes/polygons_border_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/shapes/shapes01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/shapes/shapes02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/simple_objects.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/small_sunflower.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/spherical/equirectangular_glowsticks.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/spherical/equirectangular_half_dome_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/spherical/equirectangular_half_dome_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stabilize.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/standard/barbara.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/standard/boat.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/standard/fingerprint.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/standard/house.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/standard/lena512.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/standard/man_mls.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/standard/mona_lisa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/standard/peppers256.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/chair01_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/chair01_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/chair02_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/chair02_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/garden01_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/garden01_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/garden02_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/garden02_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/lantern01_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/lantern01_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/mono_wall_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/mono_wall_01_undist.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/mono_wall_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/mono_wall_02_undist.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/mono_wall_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/mono_wall_03_undist.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/stones01_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/stones01_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/sundial01_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/sundial01_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/wall01_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stereo/wall01_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/apartment_building_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/apartment_building_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/cave_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/cave_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/grass_rotate_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/grass_rotate_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/grass_rotate_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/grass_rotate_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/kayak_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/kayak_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/kayak_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/kayak_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/kayak_05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/kayak_06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/kayak_07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/mountain_rotate_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/mountain_rotate_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/mountain_rotate_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/mountain_rotate_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/trees_rotate_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/trees_rotate_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/trees_rotate_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/stitch/trees_rotate_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/structure/dist_cyto_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/structure/dist_cyto_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/structure/intrinsic.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/structure/undist_cyto_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/structure/undist_cyto_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/sunflowers.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/template/browser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/template/cursor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/template/cursor_mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/template/desktop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/template/paint.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/balls_blue_red.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/balls_blue_red_rect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/chessboard_SonyDSC_01.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/chipmunk.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/chipmunk_rect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/file_list.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/night_follow_car.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/night_follow_car_rect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/snow_follow_car.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/snow_follow_car_rect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/track_book.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/track_book_rect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/track_peter.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/track_peter_rect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/tree.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/tree_rect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/wildcat_robot.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/tracking/wildcat_robot_rect.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/trees_rotate_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/trees_rotate_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/video_lines.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/backyard/config.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/backyard/left.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/backyard/right.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/backyard/stereo.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/data.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/data_mono_plane.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/drc/config_plane.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/drc/config_stereo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/drc/left.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/drc/mono_plane.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/drc/notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/drc/right.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/drc/stereo.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/library/config.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/library/left.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/library/right.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/library/stereo.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/rockville/config.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/rockville/left.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/rockville/right.mjpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/vo/rockville/stereo.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/xray01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/example/zoom.mjpeg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data" afterPath="$PROJECT_DIR$/data" />
+    </list>
+    <ignored path="BoofCV.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="BoofCV" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoofCV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="boofcv" />
+        <subPane subId="Project Files" />
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66bdadb7-b6c5-475e-bdfc-43c419c854ae" name="Default" comment="" />
+      <created>1503144470275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503144470275</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
