@@ -27,8 +27,6 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,13 +38,19 @@ import java.util.List;
  */
 public class ListDisplayPanel extends JPanel implements ListSelectionListener  {
 
+	private static final int LIST_WIDTH = 150;
+	private static final int BUTTON_POSITION_X = 250;
+	private static final int BUTTON_POSITION_Y = 425;
+	private static final int BUTTON_SIZE_WIDTH = 100;
+	private static final int BUTTON_SIZE_HEIGHT = 40;
+
 	final List<JPanel> panels = new ArrayList<>();
 	private JPanel bodyPanel;
 	private JList listPanel;
 	int selectedIndex = 0;
-	JButton jButton = new JButton("Oberteil auswählen");
-	JButton jButtonHose = new JButton("Hose auswählen");
-	JButton jButtonSchuhe = new JButton("Schuhe auswählen!");
+	JButton jButton = new JButton("Auswählen");
+	JButton jButtonHose = new JButton("Auswählen");
+	JButton jButtonSchuhe = new JButton("Auswählen!");
 
 	DefaultListModel listModel = new DefaultListModel();
 
@@ -57,22 +61,22 @@ public class ListDisplayPanel extends JPanel implements ListSelectionListener  {
 
 	public ListDisplayPanel() {
 		setLayout(new BorderLayout());
-		listPanel = new JList(listModel);
 
+		listPanel = new JList(listModel);
 		listPanel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		listPanel.setSelectedIndex(0);
 		listPanel.addListSelectionListener(this);
-
 		scroll = new JScrollPane(listPanel);
 		scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-		jButtonSchuhe.setBounds(800,300,200,100);
-		jButton.setBounds(800,100,200,100);
-		jButtonHose.setBounds(800,200,200,100);
+		jButtonSchuhe.setBounds(BUTTON_POSITION_X,BUTTON_POSITION_Y, BUTTON_SIZE_WIDTH, BUTTON_SIZE_HEIGHT);
+		jButton.setBounds(BUTTON_POSITION_X,BUTTON_POSITION_Y,BUTTON_SIZE_WIDTH,BUTTON_SIZE_HEIGHT);
+		jButtonHose.setBounds(BUTTON_POSITION_X,BUTTON_POSITION_Y,BUTTON_SIZE_WIDTH,BUTTON_SIZE_HEIGHT);
 		jButtonSchuhe.setVisible(false);
 		jButtonHose.setVisible(false);
 		jButton.setVisible(true);
 		bodyPanel = new JPanel();
+		bodyPanel.setPreferredSize(new Dimension(550, 500));
 		bodyPanel.add(jButtonSchuhe);
 		bodyPanel.add(jButtonHose);
 		bodyPanel.add(jButton);
@@ -154,7 +158,7 @@ public class ListDisplayPanel extends JPanel implements ListSelectionListener  {
 		// make the preferred size large enough to hold all the images
 		bodyWidth = (int)Math.max(bodyWidth, panelD.getWidth());
 		bodyHeight = (int)Math.max(bodyHeight,panelD.getHeight());
-
+		panel.setBackground(Color.WHITE);
 		panels.add(panel);
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
@@ -164,6 +168,7 @@ public class ListDisplayPanel extends JPanel implements ListSelectionListener  {
 				}
 				// update the list's size
 				Dimension d = listPanel.getMinimumSize();
+				d.setSize(LIST_WIDTH, listPanel.getHeight());
 				listPanel.setPreferredSize(new Dimension(d.width + scroll.getVerticalScrollBar().getWidth(), d.height));
 
 				// make sure it's preferred size is up to date

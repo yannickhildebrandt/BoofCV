@@ -78,7 +78,6 @@ public class BoofMiscOps {
 		});
 	}
 
-
 	/**
 	 * Returns the number of digits in a number. E.g. 345 = 3, -345 = 4, 0 = 1
 	 */

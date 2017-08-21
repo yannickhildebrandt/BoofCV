@@ -41,12 +41,14 @@ import org.ddogleg.nn.NnData;
 import org.ddogleg.struct.FastQueue;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.lang.reflect.Array;
 import java.util.*;
+import java.util.List;
 
 import static boofcv.examples.imageprocessing.ExamplePlanarImages.gui;
 
@@ -82,6 +84,14 @@ public class ExampleColorHistogramLookup {
 	static File resultSchuhe;
 	static ArrayList<File> resultListHose= new ArrayList<File>();
 	static ArrayList<File> resultListSchuhe= new ArrayList<File>();
+
+	//Größe der Kleidungstücke, wie sie in der UI angezeigt werden
+	private static final int HOSE_WIDTH = 160;
+	private static final int HOSE_HEIGHT = 400;
+	private static final int OBERTEIL_WIDTH = 300;
+	private static final int OBERTEIL_HEIGHT = 400;
+	private static final int SCHUHE_WIDTH = 300;
+	private static final int SCHUHE_HEIGHT = 150;
 
 	/**
 	 * HSV stores color information in Hue and Saturation while intensity is in Value.  This computes a 2D histogram
@@ -217,27 +227,25 @@ public class ExampleColorHistogramLookup {
 
 		return points;
 	}
-	/*
+	/**
 	* Filelisten initialisieren und in punktlisten umwandeln dort können verschiedene arten der farbhistogramme
 	* gewählt werden. Danach werden dem UI alle Oberteile hinzugefügt und die verschiedenen Buttons initialisiert
-	*
-	*
-	*
+	 *
 	* */
 
 	public static void main(String[] args) {
-
-		String regexOberteile = UtilIO.pathExample("recognition/Oberteile")+"/^\\w*.jpg";
-		String regexHosen = UtilIO.pathExample("recognition/Hosen")+"/^\\w*.jpg";
-		String regexTestSchuhe = UtilIO.pathExample("recognition/Schuhe")+"/^\\w*.jpg";
+		String regexImage = ".+jpg";
+		String pathOberteile = UtilIO.pathExample("recognition/Oberteile");
+		String pathHosen = UtilIO.pathExample("recognition/Hosen");
+		String pathSchuhe = UtilIO.pathExample("recognition/Schuhe");
 		//List <File> images für Oberteile
 		//List <File> images für hosen/Unterteile
 		//List <File> image für Schuhe
-		imagesHosen = Arrays.asList(BoofMiscOps.findMatches(regexHosen));
+		imagesHosen = Arrays.asList(BoofMiscOps.findMatches(new File(pathHosen), regexImage));
 		Collections.sort(imagesHosen);
-		imagesOberteile = Arrays.asList(BoofMiscOps.findMatches(regexOberteile));
+		imagesOberteile = Arrays.asList(BoofMiscOps.findMatches(new File(pathOberteile), regexImage));
 		Collections.sort(imagesOberteile);
-		TestSchuhe = Arrays.asList(BoofMiscOps.findMatches(regexTestSchuhe));
+		TestSchuhe = Arrays.asList(BoofMiscOps.findMatches(new File(pathSchuhe), regexImage));
 		Collections.sort(TestSchuhe);
 		// Different color spaces you can try
 		// Color listen für hose und schuhe anlegen lassen
@@ -252,7 +260,7 @@ public class ExampleColorHistogramLookup {
 		for (int i = 0; i < imagesOberteile.size(); i++) {
 			File file = imagesOberteile.get(i);
 			BufferedImage image = UtilImageIO.loadImage(file.getPath());
-			gui.addImage(image, String.format("Oberteil"), ScaleOptions.ALL);}
+			gui.addImage(resize(image, OBERTEIL_WIDTH, OBERTEIL_HEIGHT), String.format("Oberteil Nummer " + (i+1)), ScaleOptions.NONE);}
 		//Zeigt UI an
 		ShowImages.showWindow(gui,"Similar Images",true);
 		// Holt Button aus der Klasse
@@ -260,7 +268,7 @@ public class ExampleColorHistogramLookup {
 		setButtonHosen(gui);
 		setButtonSchuhe(gui);
 	}
-	/*
+	/**
 	*
 	* Initialisierung der verschiedenen Buttons, die beim klicken Ähnlichkeit aufgrund des ausgewählten kleidungsstück berechnen
 	* und die 3 nächsten nachbarn im UI zurückgeben
@@ -288,7 +296,7 @@ public class ExampleColorHistogramLookup {
 					File file = results.get(i).data;
 					double error = results.get(i).distance;
 					BufferedImage image = UtilImageIO.loadImage(file.getPath());
-					gui.addImage(image, String.format("Error %6.3f", error), ScaleOptions.ALL);
+					gui.addImage(resize(image, HOSE_WIDTH, HOSE_HEIGHT), "Hose Nummer " + (i+1), ScaleOptions.NONE);
 					resultListHose.add(file);
 					System.out.println("Die ResultListHose ist "+resultListHose.size()+" Elemente groß");
 
@@ -319,7 +327,7 @@ public class ExampleColorHistogramLookup {
 					File file = results.get(i).data;
 					double error = results.get(i).distance;
 					BufferedImage image = UtilImageIO.loadImage(file.getPath());
-					gui.addImage(image, String.format("Error %6.3f", error), ScaleOptions.ALL);
+					gui.addImage(resize(image, SCHUHE_WIDTH, SCHUHE_HEIGHT), "Schuh Nummer " + (i+1), ScaleOptions.NONE);
 					resultListSchuhe.add(file);
 					System.out.println("ResultList Schuhe ist "+resultListSchuhe.size()+" Elemente groß");
 				}
@@ -341,13 +349,24 @@ public class ExampleColorHistogramLookup {
 				BufferedImage imageOberteil = UtilImageIO.loadImage(fileOberteil.getPath());
 				BufferedImage imageHose = UtilImageIO.loadImage(resultHose.getPath());
 				BufferedImage imageSchuhe = UtilImageIO.loadImage(resultSchuhe.getPath());
-				gui.addImage(imageOberteil, String.format("Oberteil"), ScaleOptions.ALL);
-				gui.addImage(imageHose, String.format("Hose"), ScaleOptions.ALL);
-				gui.addImage(imageSchuhe, String.format("Schuhe"), ScaleOptions.ALL);
+				gui.addImage(resize(imageOberteil, OBERTEIL_WIDTH, OBERTEIL_HEIGHT), String.format("Oberteil"), ScaleOptions.NONE);
+				gui.addImage(resize(imageHose, HOSE_WIDTH, HOSE_HEIGHT), String.format("Hose"), ScaleOptions.NONE);
+				gui.addImage(resize(imageSchuhe, SCHUHE_WIDTH, SCHUHE_HEIGHT), String.format("Schuhe"), ScaleOptions.NONE);
 				button.setVisible(false);
 			}
 		});
 
+	}
+
+	public static BufferedImage resize(BufferedImage img, int newW, int newH) {
+		Image tmp = img.getScaledInstance(newW, newH, Image.SCALE_SMOOTH);
+		BufferedImage dimg = new BufferedImage(newW, newH, BufferedImage.TYPE_INT_ARGB);
+
+		Graphics2D g2d = dimg.createGraphics();
+		g2d.drawImage(tmp, 0, 0, null);
+		g2d.dispose();
+
+		return dimg;
 	}
 
 
