@@ -51,6 +51,7 @@ import java.util.*;
 import java.util.List;
 
 import static boofcv.examples.imageprocessing.ExamplePlanarImages.gui;
+import static jdk.nashorn.internal.objects.NativeMath.round;
 
 /**
  * Demonstration of how to find similar images using color histograms.  Image color histograms here are treated as
@@ -187,7 +188,7 @@ public class ExampleColorHistogramLookup {
 			ConvertBufferedImage.convertFrom(buffered, rgb, true);
 
 			// The number of bins is an important parameter.  Try adjusting it
-			Histogram_F64 histogram = new Histogram_F64(10,10,10);
+			Histogram_F64 histogram = new Histogram_F64(80,80,80);
 			histogram.setRange(0, 0, 255);
 			histogram.setRange(1, 0, 255);
 			histogram.setRange(2, 0, 255);
@@ -291,12 +292,12 @@ public class ExampleColorHistogramLookup {
 				targetPoint = pointsOberteile.get(targetOberteil);
 				nn.init(targetPoint.length);
 				nn.setPoints(pointsHosen, imagesHosen);
-				nn.findNearest(targetPoint, -1, 3, results);
+				nn.findNearest(targetPoint, -1, 20, results);
 				for (int i = 0; i < results.size; i++) {
 					File file = results.get(i).data;
 					double error = results.get(i).distance;
 					BufferedImage image = UtilImageIO.loadImage(file.getPath());
-					gui.addImage(resize(image, HOSE_WIDTH, HOSE_HEIGHT), "Hose Nummer " + (i+1), ScaleOptions.NONE);
+					gui.addImage(resize(image, HOSE_WIDTH, HOSE_HEIGHT), "Hose Nummer " + (i+1) + "(" + error +")", ScaleOptions.NONE);
 					resultListHose.add(file);
 					System.out.println("Die ResultListHose ist "+resultListHose.size()+" Elemente groß");
 
@@ -322,12 +323,12 @@ public class ExampleColorHistogramLookup {
 				targetPoint = pointsOberteile.get(targetOberteil);
 				nn.init(targetPoint.length);
 				nn.setPoints(pointsTestSchuhe, TestSchuhe);
-				nn.findNearest(targetPoint, -1, 3, results);
+				nn.findNearest(targetPoint, -1, 10, results);
 				for (int i = 0; i < results.size; i++) {
 					File file = results.get(i).data;
 					double error = results.get(i).distance;
 					BufferedImage image = UtilImageIO.loadImage(file.getPath());
-					gui.addImage(resize(image, SCHUHE_WIDTH, SCHUHE_HEIGHT), "Schuh Nummer " + (i+1), ScaleOptions.NONE);
+					gui.addImage(resize(image, SCHUHE_WIDTH, SCHUHE_HEIGHT), "Schuh Nummer " + (i+1) + "(" + error +")", ScaleOptions.NONE);
 					resultListSchuhe.add(file);
 					System.out.println("ResultList Schuhe ist "+resultListSchuhe.size()+" Elemente groß");
 				}
